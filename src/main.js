@@ -1,16 +1,34 @@
-// import { createApp } from 'vue'
-// import App from './App.vue'
+/*
+ * @Author: zhangjian
+ * @Date: 2022-03-29 11:47:19
+ * @LastEditTime: 2022-05-25 14:16:48
+ * @LastEditors: zhangjian
+ * @Description: 描述
+ */
+import { createApp } from 'vue'
+import App from './App.vue'
 
-// createApp(App).mount('#app')
+createApp(App).mount('#app')
 
-import Button from './components/Button.vue'
-import Header from './components/Header.vue'
-import Page from './components/Page.vue'
+import MyButton from './components/Button.vue'
+
+export {
+  MyButton,
+}
 
 export default {
   install: Vue => {
-    Vue.use(Button);
-    Vue.use(Header);
-    Vue.use(Page);
+    Vue.use(MyButton);
   }
 }
+
+
+   
+// import Vue from "vue";
+// import App from "./App.vue";
+
+// Vue.config.productionTip = false;
+
+// new Vue({
+//   render: h => h(App)
+// }).$mount("#app");
