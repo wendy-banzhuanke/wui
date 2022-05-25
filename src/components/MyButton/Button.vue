@@ -3,7 +3,7 @@
   <div>测试一个组件</div>
 </template>
 
-<script lang="ts">
+<script>
 import './button.css';
 import { reactive, computed } from 'vue';
 
